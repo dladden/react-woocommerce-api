@@ -73,6 +73,10 @@ This project provides examples of integrating React with WooCommerce in the foll
 
 Tailwind CSS is a utility-first CSS framework that seamlessly integrates with React, providing developers with a highly efficient and flexible styling solution. With Tailwind's extensive collection of utility classes, developers can leverage pre-defined styles directly within their React components, eliminating the need for manual CSS authoring. This approach significantly reduces development time and effort, allowing developers to focus on building functionality rather than wrestling with complex styling. Tailwind's responsive design utilities enable developers to create responsive layouts effortlessly by applying responsive classes based on screen breakpoints.
 
+Tailwind Useful Links:<br>
+Tailwind: https://tailwindcss.com/docs/guides/nextjs<br>
+Tailwind Cheat Sheet: https://nerdcave.com/tailwind-cheat-sheet
+
 ### Sass
 
 Syntactically Awesome Style Sheets is a CSS preprocessor that extends the capabilities of CSS. It introduces features that are not available in traditional CSS, making it easier and more efficient to write and maintain stylesheets.
@@ -94,7 +98,6 @@ Here are the general steps to start WordPress locally:
 
 1. Install a local development environment: Download and install a local server environment tool like XAMPP (for Windows, macOS, or Linux), WAMP (for Windows), or MAMP (for macOS). These tools provide a package that includes Apache, MySQL, and PHP, which are required to run WordPress.
 2. Download and install WordPress: Download the latest version of WordPress from the official website (wordpress.org). Extract the downloaded file and move it to the web server directory of your local development environment (e.g., the "htdocs" folder in XAMPP).
-3.
 
 ## Network Locations:
 
