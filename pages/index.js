@@ -1,23 +1,26 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Header from "../src/components/header";
-import Footer from "../src/components/footer";
+import Header from "../src/components/layouts/header";
+import Footer from "../src/components/layouts/footer";
 import axios from "axios";
 // import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home(props) {
-  console.warn("props", props);
+export default function Home({ data }) {
+  console.warn("data", data);
+  //pulling the header and the footer objects out of the data
+  const { header, footer } = data;
   return (
     <div>
-      <Header />
+      //passing the header into the Header component
+      <Header header={header} />
       <main>
         <h1>TEST TEST TEST TEST TEST</h1>
         <p>hello</p>
       </main>
-      <Footer />
+      <Footer footer={footer} />
     </div>
   );
 }
@@ -32,9 +35,7 @@ export async function getStaticProps() {
   );
 
   return {
-    props: {
-      data: data || {},
-    },
+    props: data || {},
     /**
      * Revalidate means that if a new request comes to server, then every 1 sec it will check
      * if the data is changed, if it is changed then it will update the

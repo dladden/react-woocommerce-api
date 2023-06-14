@@ -1,5 +1,6 @@
 import Head from "next/head"; //next js component
-const Header = () => {
+const Header = ({ header }) => {
+  console.warn("header", header);
   return (
     <>
       <Head>
@@ -21,7 +22,7 @@ const Header = () => {
               </svg>
               <span className="font-semibold text-xl tracking-tight">
                 <a className="" href="/">
-                  WooNext
+                  usmle
                 </a>
               </span>
             </div>
@@ -38,36 +39,48 @@ const Header = () => {
               </button>
             </div>
             <div className="h-0 w-full overflow-hidden lg:h-full flex-grow lg:flex lg:items-center lg:w-auto">
-              <div className="text-sm font-medium uppercase lg:flex-grow">
+              <div className="text-sm font-medium lg:flex-grow">
                 <a
                   className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
                   href="/categories/"
                 >
-                  Categories
+                  Products
                 </a>
                 <a
                   className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
                   href="/"
                 >
-                  Women
+                  Pricing
                 </a>
                 <a
                   className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
                   href="/"
                 >
-                  Kids
+                  Authors
                 </a>
                 <a
                   className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
                   href="/"
                 >
-                  Home &amp; Living
+                  Podcast
                 </a>
                 <a
                   className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
                   href="/"
                 >
-                  Offers
+                  Scholarship
+                </a>
+                <a
+                  className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
+                  href="/"
+                >
+                  Tutoring
+                </a>
+                <a
+                  className="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-10"
+                  href="/"
+                >
+                  Support
                 </a>
               </div>
               <div className="text-sm font-medium">
