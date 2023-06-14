@@ -14,11 +14,10 @@ export default function Home({ data }) {
   const { header, footer } = data;
   return (
     <div>
-      //passing the header into the Header component
+      {/* passing the header into the Header component */}
       <Header header={header} />
       <main>
         <h1>TEST TEST TEST TEST TEST</h1>
-        <p>hello</p>
       </main>
       <Footer footer={footer} />
     </div>
