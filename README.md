@@ -111,3 +111,13 @@ http://localhost/wordpress/wp-admin/
 
 Backend:
 http://localhost/wordpress/
+
+# Dependencies:
+
+## Loadash
+
+Lodash is a popular JavaScript utility library that provides a wide range of helper functions to facilitate common programming tasks. It offers a consistent and simplified API for manipulating arrays, objects, strings, and other data types in JavaScript. Lodash provides functions for various operations such as iterating over arrays and objects, manipulating and transforming data, performing comparisons, handling async operations, and much more. These functions are designed to be efficient, reliable, and cross-platform compatible.
+
+## DOMPurify
+
+DOMPurify is a JavaScript library that helps prevent Cross-Site Scripting (XSS) attacks by sanitizing HTML code. XSS attacks occur when untrusted or malicious code is injected into a web page, potentially allowing attackers to execute harmful scripts or access sensitive information. DOMPurify takes an input string of HTML code and cleans it by removing any potentially dangerous elements, attributes, and JavaScript code. It ensures that only safe and trusted HTML is rendered in the browser, mitigating the risk of XSS vulnerabilities.
